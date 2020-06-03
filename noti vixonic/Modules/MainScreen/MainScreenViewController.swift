@@ -167,6 +167,10 @@ extension MainScreenViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.onViewDidLoad()
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        self.title = "Cuenta"
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

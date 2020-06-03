@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LlE-WI-nft">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LlE-WI-nft">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,14 +20,14 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="LlE-WI-nft" customClass="MainScreenViewController" customModule="Noti_Vixonic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AAr-GR-cW8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3T-eZ-jot" userLabel="{topBarView}">
-                                <rect key="frame" x="0.0" y="-44" width="375" height="160"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3T-eZ-jot" userLabel="{topBarView}">
+                                <rect key="frame" x="0.0" y="44" width="414" height="172"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asf-OE-RA8" userLabel="{nameLabel}">
-                                        <rect key="frame" x="16" y="106.5" width="351" height="37.5"/>
+                                        <rect key="frame" x="16" y="118.33333333333336" width="390" height="37.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="32"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -42,12 +42,12 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                        <real key="value" value="0.69999999999999996"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSb-q4-7t9" userLabel="{logoutButton}" customClass="MDCButton">
-                                <rect key="frame" x="16" y="523" width="343" height="56"/>
+                                <rect key="frame" x="16" y="718" width="382" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="al7-gc-Dp7"/>
                                 </constraints>
@@ -57,13 +57,13 @@
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="By9-xw-w5h" userLabel="{userInfoContentView}">
-                                <rect key="frame" x="16" y="132" width="343" height="328"/>
+                                <rect key="frame" x="16" y="232.00000000000003" width="382" height="326.66666666666674"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="JEn-u1-BCK" userLabel="{dataStackView}">
-                                        <rect key="frame" x="24" y="24" width="295" height="280"/>
+                                        <rect key="frame" x="24" y="24" width="334" height="278.66666666666669"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="ijw-be-jHe" userLabel="{phoneStackView}">
-                                                <rect key="frame" x="0.0" y="0.0" width="295" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="33.666666666666664"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smartPhoneIcon" translatesAutoresizingMaskIntoConstraints="NO" id="zjo-Lc-FzD" userLabel="{smartPhoneIconImage}">
                                                         <rect key="frame" x="0.0" y="5" width="24" height="24"/>
@@ -73,16 +73,16 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="w4Y-hM-cdi" userLabel="{phoneLabelsStackView}">
-                                                        <rect key="frame" x="48" y="0.0" width="247" height="34"/>
+                                                        <rect key="frame" x="48" y="0.0" width="286" height="33.666666666666664"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phoneLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7M9-fn-f4U" userLabel="{numberLabel}">
-                                                                <rect key="frame" x="0.0" y="0.0" width="67.5" height="15.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="67.333333333333329" height="15.333333333333334"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número de contacto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcG-WJ-ea5" userLabel="{numberTextLabel}">
-                                                                <rect key="frame" x="0.0" y="19.5" width="109.5" height="14.5"/>
+                                                                <rect key="frame" x="0.0" y="19.333333333333314" width="109.33333333333333" height="14.333333333333336"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                                                 <color key="textColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -92,7 +92,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="kGN-Oy-ASu" userLabel="{dniDataStackView}">
-                                                <rect key="frame" x="0.0" y="82" width="295" height="34"/>
+                                                <rect key="frame" x="0.0" y="81.666666666666686" width="334" height="33.666666666666657"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personIcon" translatesAutoresizingMaskIntoConstraints="NO" id="eaQ-5q-AQ2" userLabel="{personIcon}">
                                                         <rect key="frame" x="0.0" y="5" width="24" height="24"/>
@@ -102,16 +102,16 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="xzm-QI-Kfi" userLabel="{rutStackView}">
-                                                        <rect key="frame" x="48" y="0.0" width="247" height="34"/>
+                                                        <rect key="frame" x="48" y="0.0" width="286" height="33.666666666666664"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dniLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8d-fi-DBK" userLabel="{dniNumberLabel}">
-                                                                <rect key="frame" x="0.0" y="0.0" width="49.5" height="15.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="49.333333333333336" height="15.333333333333334"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DNI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdc-DV-W4H" userLabel="{dniTextLabel}">
-                                                                <rect key="frame" x="0.0" y="19.5" width="20" height="14.5"/>
+                                                                <rect key="frame" x="0.0" y="19.333333333333314" width="20" height="14.333333333333336"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                                                 <color key="textColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -121,7 +121,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="VPZ-3t-cHa" userLabel="{emailStackView}">
-                                                <rect key="frame" x="0.0" y="164" width="295" height="34"/>
+                                                <rect key="frame" x="0.0" y="163.33333333333331" width="334" height="33.666666666666657"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emailIcon" translatesAutoresizingMaskIntoConstraints="NO" id="VMt-BJ-Unr" userLabel="{emailIconImage}">
                                                         <rect key="frame" x="0.0" y="5" width="24" height="24"/>
@@ -131,16 +131,16 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="e7v-Ln-Aan" userLabel="{emailLabelsStackView}">
-                                                        <rect key="frame" x="48" y="0.0" width="247" height="34"/>
+                                                        <rect key="frame" x="48" y="0.0" width="286" height="33.666666666666664"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="emailLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ik-QX-ZVG" userLabel="{emailLabel}">
-                                                                <rect key="frame" x="0.0" y="0.0" width="247" height="15.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="286" height="15.333333333333334"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo electrónico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Kq-au-qrI" userLabel="{emailTextLabel}">
-                                                                <rect key="frame" x="0.0" y="19.5" width="247" height="14.5"/>
+                                                                <rect key="frame" x="0.0" y="19.333333333333371" width="286" height="14.333333333333336"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                                                 <color key="textColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -150,7 +150,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="ZXR-X0-VSQ" userLabel="{trustIdDataStackView}">
-                                                <rect key="frame" x="0.0" y="246" width="295" height="34"/>
+                                                <rect key="frame" x="0.0" y="244.99999999999997" width="334" height="33.666666666666657"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trustIdIcon" translatesAutoresizingMaskIntoConstraints="NO" id="W8U-j9-3do" userLabel="{trustIdIcon}">
                                                         <rect key="frame" x="0.0" y="5" width="24" height="24"/>
@@ -160,16 +160,16 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="YeY-lD-Dnb" userLabel="{trustIdTextsStackView}">
-                                                        <rect key="frame" x="48" y="0.0" width="247" height="34"/>
+                                                        <rect key="frame" x="48" y="0.0" width="286" height="33.666666666666664"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TrustID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PU0-ak-8G1" userLabel="{trustIdLabel}">
-                                                                <rect key="frame" x="0.0" y="0.0" width="247" height="15.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="286" height="15.333333333333334"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trust ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sg-og-x3K" userLabel="{trustIdTextLabel}">
-                                                                <rect key="frame" x="0.0" y="19.5" width="247" height="14.5"/>
+                                                                <rect key="frame" x="0.0" y="19.333333333333371" width="286" height="14.333333333333336"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                                                 <color key="textColor" white="0.54000000000000004" alpha="0.84705882349999995" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
@@ -195,7 +195,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoVixonic" translatesAutoresizingMaskIntoConstraints="NO" id="ibo-28-QB9" userLabel="{bottomVixonicLogoImage}">
-                                <rect key="frame" x="140.5" y="595" width="94" height="56"/>
+                                <rect key="frame" x="155.33333333333334" y="790" width="103.33333333333334" height="56"/>
                             </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJM-xT-Jr7">
                                 <rect key="frame" x="146" y="523" width="122" height="30"/>
@@ -206,25 +206,25 @@
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uJ-5g-TcB" userLabel="{modalBackground}">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCC-Kz-kuH" userLabel="{modalView}">
-                                        <rect key="frame" x="40" y="171.5" width="295" height="323"/>
+                                        <rect key="frame" x="40" y="273" width="334" height="349"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="L5M-o6-1KW" userLabel="{modalStackView}">
-                                                <rect key="frame" x="4" y="32" width="287" height="287"/>
+                                                <rect key="frame" x="4" y="32" width="326" height="313"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6AM-Tj-Ht8" userLabel="{permissionInfoStackView}">
-                                                        <rect key="frame" x="0.0" y="0.0" width="287" height="195"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="326" height="221"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="permissionsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="LSh-kY-bDX" userLabel="{permissionsIcon}">
-                                                                <rect key="frame" x="103.5" y="0.0" width="80" height="127"/>
+                                                                <rect key="frame" x="115.33333333333334" y="0.0" width="95.333333333333343" height="153"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="LSh-kY-bDX" secondAttribute="height" multiplier="10:16" id="eQU-aA-NCE"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para el optimo uso de la aplicación acepte los permisos requeridos." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5m-XV-CJu" userLabel="{permissionsText}">
-                                                                <rect key="frame" x="28" y="162" width="231" height="33"/>
+                                                                <rect key="frame" x="28" y="188" width="270" height="33"/>
                                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -236,14 +236,14 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0s0-WH-2v7" userLabel="{modalButtonsStackView}">
-                                                        <rect key="frame" x="0.0" y="231" width="287" height="56"/>
+                                                        <rect key="frame" x="0.0" y="257" width="326" height="56"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DdI-Bj-ylV" userLabel="{whiteSpaceView}">
-                                                                <rect key="frame" x="0.0" y="0.0" width="93" height="56"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="106" height="56"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                             </view>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srK-68-RmF" userLabel="{cancelButton}" customClass="MDCButton">
-                                                                <rect key="frame" x="97" y="0.0" width="93" height="56"/>
+                                                                <rect key="frame" x="110" y="0.0" width="106" height="56"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="56" id="lVI-Mo-gn5"/>
                                                                 </constraints>
@@ -253,7 +253,7 @@
                                                                 </state>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YT-rh-LpV" userLabel="{acceptButton}" customClass="MDCButton">
-                                                                <rect key="frame" x="194" y="0.0" width="93" height="56"/>
+                                                                <rect key="frame" x="220" y="0.0" width="106" height="56"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="56" id="jCE-kz-RAb"/>
                                                                 </constraints>
@@ -308,7 +308,7 @@
                             <constraint firstItem="ibo-28-QB9" firstAttribute="width" secondItem="AAr-GR-cW8" secondAttribute="width" multiplier="0.25" id="RMw-bZ-NQV"/>
                             <constraint firstItem="PSb-q4-7t9" firstAttribute="leading" secondItem="lMc-kx-yJQ" secondAttribute="leading" constant="16" id="Zd0-A7-7zm"/>
                             <constraint firstItem="By9-xw-w5h" firstAttribute="leading" secondItem="lMc-kx-yJQ" secondAttribute="leading" constant="16" id="gCi-kl-dFc"/>
-                            <constraint firstItem="S3T-eZ-jot" firstAttribute="top" secondItem="lMc-kx-yJQ" secondAttribute="top" constant="-44" id="jAQ-FU-YmS"/>
+                            <constraint firstItem="S3T-eZ-jot" firstAttribute="top" secondItem="lMc-kx-yJQ" secondAttribute="top" id="jAQ-FU-YmS"/>
                             <constraint firstItem="By9-xw-w5h" firstAttribute="top" secondItem="S3T-eZ-jot" secondAttribute="bottom" constant="16" id="kpj-8C-rTg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lMc-kx-yJQ"/>

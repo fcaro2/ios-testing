@@ -39,7 +39,7 @@ class SessionMenuRouter: SessionMenuRouterProtocol {
     }
     
     func goToMainScreen() {
-        let mainScreenVC = MainScreenRouter.createModule()
+        let mainScreenVC = MainTabBarRouter.createModule()
         
         viewController?.present(mainScreenVC, animated: true)
     }

@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0E3DBAC69F68C8E2C56BBDE1 /* Pods_noti_vixonic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F8550AAF51602C5188DC94 /* Pods_noti_vixonic.framework */; };
+		B69BF3F524884D05007A204A /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69BF3EF24884D04007A204A /* MainTabBar.storyboard */; };
+		B69BF3F624884D05007A204A /* MainTabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BF3F024884D04007A204A /* MainTabBarRouter.swift */; };
+		B69BF3F724884D05007A204A /* MainTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BF3F124884D04007A204A /* MainTabBarPresenter.swift */; };
+		B69BF3F824884D05007A204A /* MainTabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BF3F224884D04007A204A /* MainTabBarInteractor.swift */; };
+		B69BF3F924884D05007A204A /* MainTabBarViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BF3F324884D05007A204A /* MainTabBarViewProtocol.swift */; };
+		B69BF3FA24884D05007A204A /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BF3F424884D05007A204A /* MainTabBarViewController.swift */; };
+		B69BF3FD24884FBC007A204A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BF3FC24884FBC007A204A /* NotificationViewController.swift */; };
+		B69BF3FF24884FE8007A204A /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69BF3FE24884FE8007A204A /* Notification.storyboard */; };
 		FE44AC53244510DF00F91084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC52244510DF00F91084 /* AppDelegate.swift */; };
 		FE44AC5D244510DF00F91084 /* noti_vixonic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC5B244510DF00F91084 /* noti_vixonic.xcdatamodeld */; };
 		FE44AC5F244510E100F91084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE44AC5E244510E100F91084 /* Assets.xcassets */; };
@@ -94,6 +102,14 @@
 		33435963A132A485CB933140 /* Pods-noti vixonic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noti vixonic.debug.xcconfig"; path = "Target Support Files/Pods-noti vixonic/Pods-noti vixonic.debug.xcconfig"; sourceTree = "<group>"; };
 		793E346893434A6914BA0B49 /* Pods-noti vixonic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noti vixonic.release.xcconfig"; path = "Target Support Files/Pods-noti vixonic/Pods-noti vixonic.release.xcconfig"; sourceTree = "<group>"; };
 		81F8550AAF51602C5188DC94 /* Pods_noti_vixonic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_noti_vixonic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69BF3EF24884D04007A204A /* MainTabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainTabBar.storyboard; sourceTree = "<group>"; };
+		B69BF3F024884D04007A204A /* MainTabBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarRouter.swift; sourceTree = "<group>"; };
+		B69BF3F124884D04007A204A /* MainTabBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarPresenter.swift; sourceTree = "<group>"; };
+		B69BF3F224884D04007A204A /* MainTabBarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarInteractor.swift; sourceTree = "<group>"; };
+		B69BF3F324884D05007A204A /* MainTabBarViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewProtocol.swift; sourceTree = "<group>"; };
+		B69BF3F424884D05007A204A /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		B69BF3FC24884FBC007A204A /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		B69BF3FE24884FE8007A204A /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
 		FE44AC4F244510DF00F91084 /* Noti Vixonic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Noti Vixonic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE44AC52244510DF00F91084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE44AC5C244510DF00F91084 /* noti_vixonic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = noti_vixonic.xcdatamodel; sourceTree = "<group>"; };
@@ -194,6 +210,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B69BF3EA24884C8E007A204A /* MainTabController */ = {
+			isa = PBXGroup;
+			children = (
+				B69BF3EF24884D04007A204A /* MainTabBar.storyboard */,
+				B69BF3F224884D04007A204A /* MainTabBarInteractor.swift */,
+				B69BF3F124884D04007A204A /* MainTabBarPresenter.swift */,
+				B69BF3F024884D04007A204A /* MainTabBarRouter.swift */,
+				B69BF3F424884D05007A204A /* MainTabBarViewController.swift */,
+				B69BF3F324884D05007A204A /* MainTabBarViewProtocol.swift */,
+			);
+			path = MainTabController;
+			sourceTree = "<group>";
+		};
+		B69BF3FB24884FAC007A204A /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				B69BF3FC24884FBC007A204A /* NotificationViewController.swift */,
+				B69BF3FE24884FE8007A204A /* Notification.storyboard */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		FE44AC46244510DF00F91084 = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +327,8 @@
 		FE44AC9124451C3800F91084 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B69BF3FB24884FAC007A204A /* Notification */,
+				B69BF3EA24884C8E007A204A /* MainTabController */,
 				FE44AC9224451C6200F91084 /* LaunchScreen */,
 				FE44AC9524451C8000F91084 /* MainScreen */,
 				FE44AC9424451C7800F91084 /* SessionMenu */,
@@ -502,8 +542,10 @@
 			files = (
 				FE44AC8824451B0400F91084 /* Roboto-Medium.ttf in Resources */,
 				FE44AC62244510E100F91084 /* LaunchScreen.storyboard in Resources */,
+				B69BF3F524884D05007A204A /* MainTabBar.storyboard in Resources */,
 				FE44AC8924451B0400F91084 /* Roboto-Bold.ttf in Resources */,
 				FE44AC5F244510E100F91084 /* Assets.xcassets in Resources */,
+				B69BF3FF24884FE8007A204A /* Notification.storyboard in Resources */,
 				FE5FDC5C2448BD8D00E14280 /* GoogleService-Info.plist in Resources */,
 				FE44ACE32446327300F91084 /* vixonic-loader.json in Resources */,
 				FE44AC8724451B0400F91084 /* Roboto-Regular.ttf in Resources */,
@@ -603,13 +645,17 @@
 				FE44ACB124451EA800F91084 /* SessionMenuInteractor.swift in Sources */,
 				FE44ACA924451E4A00F91084 /* MainScreenRouter.swift in Sources */,
 				FE44AC53244510DF00F91084 /* AppDelegate.swift in Sources */,
+				B69BF3FD24884FBC007A204A /* NotificationViewController.swift in Sources */,
+				B69BF3F824884D05007A204A /* MainTabBarInteractor.swift in Sources */,
 				FE44AC7B24451A4000F91084 /* UserDataManager.swift in Sources */,
 				FE44ACCD24451FBC00F91084 /* Parameters.swift in Sources */,
+				B69BF3F924884D05007A204A /* MainTabBarViewProtocol.swift in Sources */,
 				FE44ACCF24451FCB00F91084 /* Responses.swift in Sources */,
 				FE44AC7924451A3400F91084 /* OAuth2Manager.swift in Sources */,
 				FE44ACA724451E3800F91084 /* MainScreenProtocols.swift in Sources */,
 				FE44AC7F24451A5200F91084 /* LocationManager.swift in Sources */,
 				FE44AC9724451CAB00F91084 /* SplashInteractor.swift in Sources */,
+				B69BF3F724884D05007A204A /* MainTabBarPresenter.swift in Sources */,
 				FE44ACD224451FEE00F91084 /* OAuth2ClientHandler.swift in Sources */,
 				FE44ACC924451FA200F91084 /* API.swift in Sources */,
 				FE44AC5D244510DF00F91084 /* noti_vixonic.xcdatamodeld in Sources */,
@@ -623,9 +669,11 @@
 				FE44ACB524451ED000F91084 /* SessionMenuProtocols.swift in Sources */,
 				FE44ACBB24451F0D00F91084 /* SessionMenuViewController.swift in Sources */,
 				FE44ACB724451EEB00F91084 /* SessionMenuRouter.swift in Sources */,
+				B69BF3FA24884D05007A204A /* MainTabBarViewController.swift in Sources */,
 				FE44AC8C24451BC300F91084 /* User.swift in Sources */,
 				FE44ACA324451E0A00F91084 /* MainScreenInteractor.swift in Sources */,
 				FE44AC9024451BD700F91084 /* Credential.swift in Sources */,
+				B69BF3F624884D05007A204A /* MainTabBarRouter.swift in Sources */,
 				FE44AC8124451A5A00F91084 /* PermissionsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
