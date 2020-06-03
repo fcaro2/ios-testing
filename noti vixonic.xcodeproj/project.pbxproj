@@ -1,0 +1,981 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E3DBAC69F68C8E2C56BBDE1 /* Pods_noti_vixonic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F8550AAF51602C5188DC94 /* Pods_noti_vixonic.framework */; };
+		FE44AC53244510DF00F91084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC52244510DF00F91084 /* AppDelegate.swift */; };
+		FE44AC5D244510DF00F91084 /* noti_vixonic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC5B244510DF00F91084 /* noti_vixonic.xcdatamodeld */; };
+		FE44AC5F244510E100F91084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE44AC5E244510E100F91084 /* Assets.xcassets */; };
+		FE44AC62244510E100F91084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE44AC60244510E100F91084 /* LaunchScreen.storyboard */; };
+		FE44AC6D244510E100F91084 /* noti_vixonicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC6C244510E100F91084 /* noti_vixonicTests.swift */; };
+		FE44AC7924451A3400F91084 /* OAuth2Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC7824451A3400F91084 /* OAuth2Manager.swift */; };
+		FE44AC7B24451A4000F91084 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC7A24451A4000F91084 /* UserDataManager.swift */; };
+		FE44AC7D24451A4800F91084 /* AuditDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC7C24451A4800F91084 /* AuditDataManager.swift */; };
+		FE44AC7F24451A5200F91084 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC7E24451A5200F91084 /* LocationManager.swift */; };
+		FE44AC8124451A5A00F91084 /* PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC8024451A5A00F91084 /* PermissionsManager.swift */; };
+		FE44AC8724451B0400F91084 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE44AC8424451B0400F91084 /* Roboto-Regular.ttf */; };
+		FE44AC8824451B0400F91084 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE44AC8524451B0400F91084 /* Roboto-Medium.ttf */; };
+		FE44AC8924451B0400F91084 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE44AC8624451B0400F91084 /* Roboto-Bold.ttf */; };
+		FE44AC8C24451BC300F91084 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC8B24451BC300F91084 /* User.swift */; };
+		FE44AC8E24451BCD00F91084 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC8D24451BCD00F91084 /* Profile.swift */; };
+		FE44AC9024451BD700F91084 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC8F24451BD700F91084 /* Credential.swift */; };
+		FE44AC9724451CAB00F91084 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC9624451CAB00F91084 /* SplashInteractor.swift */; };
+		FE44AC9924451CB600F91084 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC9824451CB600F91084 /* SplashPresenter.swift */; };
+		FE44AC9B24451CC300F91084 /* SplashProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC9A24451CC300F91084 /* SplashProtocols.swift */; };
+		FE44AC9D24451CCF00F91084 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC9C24451CCF00F91084 /* SplashRouter.swift */; };
+		FE44AC9F24451CDB00F91084 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44AC9E24451CDB00F91084 /* SplashViewController.swift */; };
+		FE44ACA124451CE500F91084 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE44ACA024451CE500F91084 /* Splash.storyboard */; };
+		FE44ACA324451E0A00F91084 /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACA224451E0A00F91084 /* MainScreenInteractor.swift */; };
+		FE44ACA524451E2100F91084 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACA424451E2100F91084 /* MainScreenPresenter.swift */; };
+		FE44ACA724451E3800F91084 /* MainScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACA624451E3800F91084 /* MainScreenProtocols.swift */; };
+		FE44ACA924451E4A00F91084 /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACA824451E4A00F91084 /* MainScreenRouter.swift */; };
+		FE44ACAB24451E5800F91084 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACAA24451E5800F91084 /* MainScreenViewController.swift */; };
+		FE44ACAD24451E6D00F91084 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE44ACAC24451E6D00F91084 /* MainScreen.storyboard */; };
+		FE44ACAF24451E9500F91084 /* SessionMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE44ACAE24451E9500F91084 /* SessionMenu.storyboard */; };
+		FE44ACB124451EA800F91084 /* SessionMenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACB024451EA800F91084 /* SessionMenuInteractor.swift */; };
+		FE44ACB324451EC000F91084 /* SessionMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACB224451EC000F91084 /* SessionMenuPresenter.swift */; };
+		FE44ACB524451ED000F91084 /* SessionMenuProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACB424451ED000F91084 /* SessionMenuProtocols.swift */; };
+		FE44ACB724451EEB00F91084 /* SessionMenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACB624451EEB00F91084 /* SessionMenuRouter.swift */; };
+		FE44ACBB24451F0D00F91084 /* SessionMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACBA24451F0D00F91084 /* SessionMenuViewController.swift */; };
+		FE44ACC924451FA200F91084 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACC824451FA200F91084 /* API.swift */; };
+		FE44ACCB24451FAC00F91084 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACCA24451FAC00F91084 /* APIRouter.swift */; };
+		FE44ACCD24451FBC00F91084 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACCC24451FBC00F91084 /* Parameters.swift */; };
+		FE44ACCF24451FCB00F91084 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACCE24451FCB00F91084 /* Responses.swift */; };
+		FE44ACD224451FEE00F91084 /* OAuth2ClientHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACD124451FEE00F91084 /* OAuth2ClientHandler.swift */; };
+		FE44ACD52445200400F91084 /* OAuth2RetryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACD42445200400F91084 /* OAuth2RetryHandler.swift */; };
+		FE44ACD82445203100F91084 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACD72445203100F91084 /* Extensions.swift */; };
+		FE44ACDB2445204000F91084 /* EnrollmentTypographyScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACDA2445204000F91084 /* EnrollmentTypographyScheme.swift */; };
+		FE44ACDD2445204D00F91084 /* RealmRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE44ACDC2445204D00F91084 /* RealmRepo.swift */; };
+		FE44ACE32446327300F91084 /* vixonic-loader.json in Resources */ = {isa = PBXBuildFile; fileRef = FE44ACE22446327300F91084 /* vixonic-loader.json */; };
+		FE5FDC5C2448BD8D00E14280 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE5FDC5B2448BD8D00E14280 /* GoogleService-Info.plist */; };
+		FE8B9B882447BBE7009EA9E7 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9B872447BBE7009EA9E7 /* NotificationService.swift */; };
+		FE8B9B8C2447BBE7009EA9E7 /* Service Notification Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FE8B9B852447BBE7009EA9E7 /* Service Notification Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FE8B9B922447BC57009EA9E7 /* ParseNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9B912447BC57009EA9E7 /* ParseNotification.swift */; };
+		FE8B9B942447BC7B009EA9E7 /* DialogNotificationStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B9B932447BC7B009EA9E7 /* DialogNotificationStructs.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE44AC69244510E100F91084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE44AC47244510DF00F91084 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE44AC4E244510DF00F91084;
+			remoteInfo = "noti vixonic";
+		};
+		FE8B9B8A2447BBE7009EA9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE44AC47244510DF00F91084 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE8B9B842447BBE7009EA9E7;
+			remoteInfo = "Service Notification Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FE8B9B902447BBE7009EA9E7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FE8B9B8C2447BBE7009EA9E7 /* Service Notification Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		33435963A132A485CB933140 /* Pods-noti vixonic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noti vixonic.debug.xcconfig"; path = "Target Support Files/Pods-noti vixonic/Pods-noti vixonic.debug.xcconfig"; sourceTree = "<group>"; };
+		793E346893434A6914BA0B49 /* Pods-noti vixonic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noti vixonic.release.xcconfig"; path = "Target Support Files/Pods-noti vixonic/Pods-noti vixonic.release.xcconfig"; sourceTree = "<group>"; };
+		81F8550AAF51602C5188DC94 /* Pods_noti_vixonic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_noti_vixonic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE44AC4F244510DF00F91084 /* Noti Vixonic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Noti Vixonic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE44AC52244510DF00F91084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE44AC5C244510DF00F91084 /* noti_vixonic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = noti_vixonic.xcdatamodel; sourceTree = "<group>"; };
+		FE44AC5E244510E100F91084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE44AC61244510E100F91084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE44AC63244510E100F91084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE44AC68244510E100F91084 /* noti vixonicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "noti vixonicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE44AC6C244510E100F91084 /* noti_vixonicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noti_vixonicTests.swift; sourceTree = "<group>"; };
+		FE44AC6E244510E100F91084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE44AC7824451A3400F91084 /* OAuth2Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2Manager.swift; sourceTree = "<group>"; };
+		FE44AC7A24451A4000F91084 /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		FE44AC7C24451A4800F91084 /* AuditDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditDataManager.swift; sourceTree = "<group>"; };
+		FE44AC7E24451A5200F91084 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		FE44AC8024451A5A00F91084 /* PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsManager.swift; sourceTree = "<group>"; };
+		FE44AC8424451B0400F91084 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		FE44AC8524451B0400F91084 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		FE44AC8624451B0400F91084 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		FE44AC8B24451BC300F91084 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FE44AC8D24451BCD00F91084 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		FE44AC8F24451BD700F91084 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		FE44AC9624451CAB00F91084 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
+		FE44AC9824451CB600F91084 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		FE44AC9A24451CC300F91084 /* SplashProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProtocols.swift; sourceTree = "<group>"; };
+		FE44AC9C24451CCF00F91084 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		FE44AC9E24451CDB00F91084 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		FE44ACA024451CE500F91084 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		FE44ACA224451E0A00F91084 /* MainScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenInteractor.swift; sourceTree = "<group>"; };
+		FE44ACA424451E2100F91084 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
+		FE44ACA624451E3800F91084 /* MainScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenProtocols.swift; sourceTree = "<group>"; };
+		FE44ACA824451E4A00F91084 /* MainScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
+		FE44ACAA24451E5800F91084 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		FE44ACAC24451E6D00F91084 /* MainScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
+		FE44ACAE24451E9500F91084 /* SessionMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SessionMenu.storyboard; sourceTree = "<group>"; };
+		FE44ACB024451EA800F91084 /* SessionMenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionMenuInteractor.swift; sourceTree = "<group>"; };
+		FE44ACB224451EC000F91084 /* SessionMenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionMenuPresenter.swift; sourceTree = "<group>"; };
+		FE44ACB424451ED000F91084 /* SessionMenuProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionMenuProtocols.swift; sourceTree = "<group>"; };
+		FE44ACB624451EEB00F91084 /* SessionMenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionMenuRouter.swift; sourceTree = "<group>"; };
+		FE44ACBA24451F0D00F91084 /* SessionMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionMenuViewController.swift; sourceTree = "<group>"; };
+		FE44ACC824451FA200F91084 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FE44ACCA24451FAC00F91084 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		FE44ACCC24451FBC00F91084 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		FE44ACCE24451FCB00F91084 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		FE44ACD124451FEE00F91084 /* OAuth2ClientHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2ClientHandler.swift; sourceTree = "<group>"; };
+		FE44ACD42445200400F91084 /* OAuth2RetryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2RetryHandler.swift; sourceTree = "<group>"; };
+		FE44ACD72445203100F91084 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FE44ACDA2445204000F91084 /* EnrollmentTypographyScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentTypographyScheme.swift; sourceTree = "<group>"; };
+		FE44ACDC2445204D00F91084 /* RealmRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepo.swift; sourceTree = "<group>"; };
+		FE44ACE02445E86100F91084 /* Noti Vixonic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Noti Vixonic.entitlements"; sourceTree = "<group>"; };
+		FE44ACE22446327300F91084 /* vixonic-loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "vixonic-loader.json"; sourceTree = "<group>"; };
+		FE5FDC5B2448BD8D00E14280 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FE8B9B852447BBE7009EA9E7 /* Service Notification Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Service Notification Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8B9B872447BBE7009EA9E7 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		FE8B9B892447BBE7009EA9E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE8B9B912447BC57009EA9E7 /* ParseNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseNotification.swift; sourceTree = "<group>"; };
+		FE8B9B932447BC7B009EA9E7 /* DialogNotificationStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogNotificationStructs.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE44AC4C244510DF00F91084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E3DBAC69F68C8E2C56BBDE1 /* Pods_noti_vixonic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE44AC65244510E100F91084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8B9B822447BBE7009EA9E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DC82CEC626D1F89FD7E876A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33435963A132A485CB933140 /* Pods-noti vixonic.debug.xcconfig */,
+				793E346893434A6914BA0B49 /* Pods-noti vixonic.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ACF291D15A2A6E339F9B5BBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81F8550AAF51602C5188DC94 /* Pods_noti_vixonic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE44AC46244510DF00F91084 = {
+			isa = PBXGroup;
+			children = (
+				FE44AC51244510DF00F91084 /* noti vixonic */,
+				FE44AC6B244510E100F91084 /* noti vixonicTests */,
+				FE8B9B862447BBE7009EA9E7 /* Service Notification Extension */,
+				FE44AC50244510DF00F91084 /* Products */,
+				1DC82CEC626D1F89FD7E876A /* Pods */,
+				ACF291D15A2A6E339F9B5BBC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FE44AC50244510DF00F91084 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE44AC4F244510DF00F91084 /* Noti Vixonic.app */,
+				FE44AC68244510E100F91084 /* noti vixonicTests.xctest */,
+				FE8B9B852447BBE7009EA9E7 /* Service Notification Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE44AC51244510DF00F91084 /* noti vixonic */ = {
+			isa = PBXGroup;
+			children = (
+				FE44ACE1244607FC00F91084 /* Animations */,
+				FE44ACE02445E86100F91084 /* Noti Vixonic.entitlements */,
+				FE44AC52244510DF00F91084 /* AppDelegate.swift */,
+				FE44AC5E244510E100F91084 /* Assets.xcassets */,
+				FE5FDC5B2448BD8D00E14280 /* GoogleService-Info.plist */,
+				FE44AC7724451A0C00F91084 /* DataManagers */,
+				FE44AC8224451AB900F91084 /* Fonts */,
+				FE44AC63244510E100F91084 /* Info.plist */,
+				FE44AC8A24451BAE00F91084 /* Model */,
+				FE44AC9124451C3800F91084 /* Modules */,
+				FE44ACC724451F9400F91084 /* Network */,
+				FE44ACD024451FE300F91084 /* OAuth2 */,
+				FE44ACD62445201E00F91084 /* Utils */,
+				FE44AC5B244510DF00F91084 /* noti_vixonic.xcdatamodeld */,
+			);
+			path = "noti vixonic";
+			sourceTree = "<group>";
+		};
+		FE44AC6B244510E100F91084 /* noti vixonicTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE44AC6C244510E100F91084 /* noti_vixonicTests.swift */,
+				FE44AC6E244510E100F91084 /* Info.plist */,
+			);
+			path = "noti vixonicTests";
+			sourceTree = "<group>";
+		};
+		FE44AC7724451A0C00F91084 /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				FE44AC7824451A3400F91084 /* OAuth2Manager.swift */,
+				FE44AC7A24451A4000F91084 /* UserDataManager.swift */,
+				FE44AC7C24451A4800F91084 /* AuditDataManager.swift */,
+				FE44AC7E24451A5200F91084 /* LocationManager.swift */,
+				FE44AC8024451A5A00F91084 /* PermissionsManager.swift */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		FE44AC8224451AB900F91084 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FE44AC8324451AC300F91084 /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FE44AC8324451AC300F91084 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				FE44AC8624451B0400F91084 /* Roboto-Bold.ttf */,
+				FE44AC8524451B0400F91084 /* Roboto-Medium.ttf */,
+				FE44AC8424451B0400F91084 /* Roboto-Regular.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		FE44AC8A24451BAE00F91084 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE44AC8B24451BC300F91084 /* User.swift */,
+				FE44AC8D24451BCD00F91084 /* Profile.swift */,
+				FE44AC8F24451BD700F91084 /* Credential.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE44AC9124451C3800F91084 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FE44AC9224451C6200F91084 /* LaunchScreen */,
+				FE44AC9524451C8000F91084 /* MainScreen */,
+				FE44AC9424451C7800F91084 /* SessionMenu */,
+				FE44AC9324451C6A00F91084 /* Splash */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FE44AC9224451C6200F91084 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FE44AC60244510E100F91084 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		FE44AC9324451C6A00F91084 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				FE44ACA024451CE500F91084 /* Splash.storyboard */,
+				FE44AC9624451CAB00F91084 /* SplashInteractor.swift */,
+				FE44AC9824451CB600F91084 /* SplashPresenter.swift */,
+				FE44AC9A24451CC300F91084 /* SplashProtocols.swift */,
+				FE44AC9C24451CCF00F91084 /* SplashRouter.swift */,
+				FE44AC9E24451CDB00F91084 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		FE44AC9424451C7800F91084 /* SessionMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FE44ACAE24451E9500F91084 /* SessionMenu.storyboard */,
+				FE44ACB024451EA800F91084 /* SessionMenuInteractor.swift */,
+				FE44ACB224451EC000F91084 /* SessionMenuPresenter.swift */,
+				FE44ACB424451ED000F91084 /* SessionMenuProtocols.swift */,
+				FE44ACB624451EEB00F91084 /* SessionMenuRouter.swift */,
+				FE44ACBA24451F0D00F91084 /* SessionMenuViewController.swift */,
+			);
+			path = SessionMenu;
+			sourceTree = "<group>";
+		};
+		FE44AC9524451C8000F91084 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FE44ACAC24451E6D00F91084 /* MainScreen.storyboard */,
+				FE44ACA224451E0A00F91084 /* MainScreenInteractor.swift */,
+				FE44ACA424451E2100F91084 /* MainScreenPresenter.swift */,
+				FE44ACA624451E3800F91084 /* MainScreenProtocols.swift */,
+				FE44ACA824451E4A00F91084 /* MainScreenRouter.swift */,
+				FE44ACAA24451E5800F91084 /* MainScreenViewController.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		FE44ACC724451F9400F91084 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FE44ACC824451FA200F91084 /* API.swift */,
+				FE44ACCA24451FAC00F91084 /* APIRouter.swift */,
+				FE44ACCC24451FBC00F91084 /* Parameters.swift */,
+				FE44ACCE24451FCB00F91084 /* Responses.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FE44ACD024451FE300F91084 /* OAuth2 */ = {
+			isa = PBXGroup;
+			children = (
+				FE44ACD124451FEE00F91084 /* OAuth2ClientHandler.swift */,
+				FE44ACD42445200400F91084 /* OAuth2RetryHandler.swift */,
+			);
+			path = OAuth2;
+			sourceTree = "<group>";
+		};
+		FE44ACD62445201E00F91084 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FE44ACD72445203100F91084 /* Extensions.swift */,
+				FE44ACDA2445204000F91084 /* EnrollmentTypographyScheme.swift */,
+				FE44ACDC2445204D00F91084 /* RealmRepo.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FE44ACE1244607FC00F91084 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				FE44ACE22446327300F91084 /* vixonic-loader.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		FE8B9B862447BBE7009EA9E7 /* Service Notification Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FE8B9B872447BBE7009EA9E7 /* NotificationService.swift */,
+				FE8B9B892447BBE7009EA9E7 /* Info.plist */,
+				FE8B9B912447BC57009EA9E7 /* ParseNotification.swift */,
+				FE8B9B932447BC7B009EA9E7 /* DialogNotificationStructs.swift */,
+			);
+			path = "Service Notification Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE44AC4E244510DF00F91084 /* noti vixonic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE44AC71244510E100F91084 /* Build configuration list for PBXNativeTarget "noti vixonic" */;
+			buildPhases = (
+				70CB7E4B81C68B336D5CD158 /* [CP] Check Pods Manifest.lock */,
+				FE44AC4B244510DF00F91084 /* Sources */,
+				FE44AC4C244510DF00F91084 /* Frameworks */,
+				FE44AC4D244510DF00F91084 /* Resources */,
+				411EFAF9C9F97CD9393A22CB /* [CP] Embed Pods Frameworks */,
+				D373959B02CE41CEF3E82FBE /* [CP] Copy Pods Resources */,
+				FE8B9B902447BBE7009EA9E7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE8B9B8B2447BBE7009EA9E7 /* PBXTargetDependency */,
+			);
+			name = "noti vixonic";
+			productName = "noti vixonic";
+			productReference = FE44AC4F244510DF00F91084 /* Noti Vixonic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE44AC67244510E100F91084 /* noti vixonicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE44AC74244510E100F91084 /* Build configuration list for PBXNativeTarget "noti vixonicTests" */;
+			buildPhases = (
+				FE44AC64244510E100F91084 /* Sources */,
+				FE44AC65244510E100F91084 /* Frameworks */,
+				FE44AC66244510E100F91084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE44AC6A244510E100F91084 /* PBXTargetDependency */,
+			);
+			name = "noti vixonicTests";
+			productName = "noti vixonicTests";
+			productReference = FE44AC68244510E100F91084 /* noti vixonicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE8B9B842447BBE7009EA9E7 /* Service Notification Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE8B9B8D2447BBE7009EA9E7 /* Build configuration list for PBXNativeTarget "Service Notification Extension" */;
+			buildPhases = (
+				FE8B9B812447BBE7009EA9E7 /* Sources */,
+				FE8B9B822447BBE7009EA9E7 /* Frameworks */,
+				FE8B9B832447BBE7009EA9E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Service Notification Extension";
+			productName = "Service Notification Extension";
+			productReference = FE8B9B852447BBE7009EA9E7 /* Service Notification Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE44AC47244510DF00F91084 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Kevin Torres";
+				TargetAttributes = {
+					FE44AC4E244510DF00F91084 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					FE44AC67244510E100F91084 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = FE44AC4E244510DF00F91084;
+					};
+					FE8B9B842447BBE7009EA9E7 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FE44AC4A244510DF00F91084 /* Build configuration list for PBXProject "noti vixonic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE44AC46244510DF00F91084;
+			productRefGroup = FE44AC50244510DF00F91084 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE44AC4E244510DF00F91084 /* noti vixonic */,
+				FE44AC67244510E100F91084 /* noti vixonicTests */,
+				FE8B9B842447BBE7009EA9E7 /* Service Notification Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE44AC4D244510DF00F91084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE44AC8824451B0400F91084 /* Roboto-Medium.ttf in Resources */,
+				FE44AC62244510E100F91084 /* LaunchScreen.storyboard in Resources */,
+				FE44AC8924451B0400F91084 /* Roboto-Bold.ttf in Resources */,
+				FE44AC5F244510E100F91084 /* Assets.xcassets in Resources */,
+				FE5FDC5C2448BD8D00E14280 /* GoogleService-Info.plist in Resources */,
+				FE44ACE32446327300F91084 /* vixonic-loader.json in Resources */,
+				FE44AC8724451B0400F91084 /* Roboto-Regular.ttf in Resources */,
+				FE44ACA124451CE500F91084 /* Splash.storyboard in Resources */,
+				FE44ACAF24451E9500F91084 /* SessionMenu.storyboard in Resources */,
+				FE44ACAD24451E6D00F91084 /* MainScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE44AC66244510E100F91084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8B9B832447BBE7009EA9E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		411EFAF9C9F97CD9393A22CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-noti vixonic/Pods-noti vixonic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-noti vixonic/Pods-noti vixonic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-noti vixonic/Pods-noti vixonic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70CB7E4B81C68B336D5CD158 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-noti vixonic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D373959B02CE41CEF3E82FBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-noti vixonic/Pods-noti vixonic-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-noti vixonic/Pods-noti vixonic-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-noti vixonic/Pods-noti vixonic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE44AC4B244510DF00F91084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE44ACB324451EC000F91084 /* SessionMenuPresenter.swift in Sources */,
+				FE44ACDD2445204D00F91084 /* RealmRepo.swift in Sources */,
+				FE44ACCB24451FAC00F91084 /* APIRouter.swift in Sources */,
+				FE44AC9B24451CC300F91084 /* SplashProtocols.swift in Sources */,
+				FE44AC9924451CB600F91084 /* SplashPresenter.swift in Sources */,
+				FE44ACAB24451E5800F91084 /* MainScreenViewController.swift in Sources */,
+				FE44AC9F24451CDB00F91084 /* SplashViewController.swift in Sources */,
+				FE44ACB124451EA800F91084 /* SessionMenuInteractor.swift in Sources */,
+				FE44ACA924451E4A00F91084 /* MainScreenRouter.swift in Sources */,
+				FE44AC53244510DF00F91084 /* AppDelegate.swift in Sources */,
+				FE44AC7B24451A4000F91084 /* UserDataManager.swift in Sources */,
+				FE44ACCD24451FBC00F91084 /* Parameters.swift in Sources */,
+				FE44ACCF24451FCB00F91084 /* Responses.swift in Sources */,
+				FE44AC7924451A3400F91084 /* OAuth2Manager.swift in Sources */,
+				FE44ACA724451E3800F91084 /* MainScreenProtocols.swift in Sources */,
+				FE44AC7F24451A5200F91084 /* LocationManager.swift in Sources */,
+				FE44AC9724451CAB00F91084 /* SplashInteractor.swift in Sources */,
+				FE44ACD224451FEE00F91084 /* OAuth2ClientHandler.swift in Sources */,
+				FE44ACC924451FA200F91084 /* API.swift in Sources */,
+				FE44AC5D244510DF00F91084 /* noti_vixonic.xcdatamodeld in Sources */,
+				FE44ACD82445203100F91084 /* Extensions.swift in Sources */,
+				FE44AC9D24451CCF00F91084 /* SplashRouter.swift in Sources */,
+				FE44ACDB2445204000F91084 /* EnrollmentTypographyScheme.swift in Sources */,
+				FE44ACA524451E2100F91084 /* MainScreenPresenter.swift in Sources */,
+				FE44AC7D24451A4800F91084 /* AuditDataManager.swift in Sources */,
+				FE44ACD52445200400F91084 /* OAuth2RetryHandler.swift in Sources */,
+				FE44AC8E24451BCD00F91084 /* Profile.swift in Sources */,
+				FE44ACB524451ED000F91084 /* SessionMenuProtocols.swift in Sources */,
+				FE44ACBB24451F0D00F91084 /* SessionMenuViewController.swift in Sources */,
+				FE44ACB724451EEB00F91084 /* SessionMenuRouter.swift in Sources */,
+				FE44AC8C24451BC300F91084 /* User.swift in Sources */,
+				FE44ACA324451E0A00F91084 /* MainScreenInteractor.swift in Sources */,
+				FE44AC9024451BD700F91084 /* Credential.swift in Sources */,
+				FE44AC8124451A5A00F91084 /* PermissionsManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE44AC64244510E100F91084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE44AC6D244510E100F91084 /* noti_vixonicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8B9B812447BBE7009EA9E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8B9B922447BC57009EA9E7 /* ParseNotification.swift in Sources */,
+				FE8B9B882447BBE7009EA9E7 /* NotificationService.swift in Sources */,
+				FE8B9B942447BC7B009EA9E7 /* DialogNotificationStructs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE44AC6A244510E100F91084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE44AC4E244510DF00F91084 /* noti vixonic */;
+			targetProxy = FE44AC69244510E100F91084 /* PBXContainerItemProxy */;
+		};
+		FE8B9B8B2447BBE7009EA9E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE8B9B842447BBE7009EA9E7 /* Service Notification Extension */;
+			targetProxy = FE8B9B8A2447BBE7009EA9E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE44AC60244510E100F91084 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE44AC61244510E100F91084 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE44AC6F244510E100F91084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE44AC70244510E100F91084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE44AC72244510E100F91084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33435963A132A485CB933140 /* Pods-noti vixonic.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "noti vixonic/Noti Vixonic.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = P896AB2AMC;
+				INFOPLIST_FILE = "noti vixonic/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "trust.noti-vixonic";
+				PRODUCT_NAME = "Noti Vixonic";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FE44AC73244510E100F91084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 793E346893434A6914BA0B49 /* Pods-noti vixonic.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "noti vixonic/Noti Vixonic.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = P896AB2AMC;
+				INFOPLIST_FILE = "noti vixonic/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "trust.noti-vixonic";
+				PRODUCT_NAME = "Noti Vixonic";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FE44AC75244510E100F91084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P896AB2AMC;
+				INFOPLIST_FILE = "noti vixonicTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "trust.noti-vixonicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/noti vixonic.app/noti vixonic";
+			};
+			name = Debug;
+		};
+		FE44AC76244510E100F91084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P896AB2AMC;
+				INFOPLIST_FILE = "noti vixonicTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "trust.noti-vixonicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/noti vixonic.app/noti vixonic";
+			};
+			name = Release;
+		};
+		FE8B9B8E2447BBE7009EA9E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = P896AB2AMC;
+				INFOPLIST_FILE = "Service Notification Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "trust.noti-vixonic.Service-Notification-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE8B9B8F2447BBE7009EA9E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = P896AB2AMC;
+				INFOPLIST_FILE = "Service Notification Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "trust.noti-vixonic.Service-Notification-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE44AC4A244510DF00F91084 /* Build configuration list for PBXProject "noti vixonic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE44AC6F244510E100F91084 /* Debug */,
+				FE44AC70244510E100F91084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE44AC71244510E100F91084 /* Build configuration list for PBXNativeTarget "noti vixonic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE44AC72244510E100F91084 /* Debug */,
+				FE44AC73244510E100F91084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE44AC74244510E100F91084 /* Build configuration list for PBXNativeTarget "noti vixonicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE44AC75244510E100F91084 /* Debug */,
+				FE44AC76244510E100F91084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE8B9B8D2447BBE7009EA9E7 /* Build configuration list for PBXNativeTarget "Service Notification Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8B9B8E2447BBE7009EA9E7 /* Debug */,
+				FE8B9B8F2447BBE7009EA9E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FE44AC5B244510DF00F91084 /* noti_vixonic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FE44AC5C244510DF00F91084 /* noti_vixonic.xcdatamodel */,
+			);
+			currentVersion = FE44AC5C244510DF00F91084 /* noti_vixonic.xcdatamodel */;
+			path = noti_vixonic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FE44AC47244510DF00F91084 /* Project object */;
+}

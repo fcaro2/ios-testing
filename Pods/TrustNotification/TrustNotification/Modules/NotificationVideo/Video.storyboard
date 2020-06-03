@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4w3-8n-30f">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Video View Controller-->
+        <scene sceneID="KCR-JP-s51">
+            <objects>
+                <viewController storyboardIdentifier="Video" id="4w3-8n-30f" customClass="VideoViewController" customModule="TrustNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7cX-f8-da1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="au1-Gq-wHm" userLabel="DialogView">
+                                <rect key="frame" x="10" y="126" width="394" height="644"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Z8v-LX-PS8">
+                                        <rect key="frame" x="0.0" y="0.0" width="394.5" height="644"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fIx-qD-j1T">
+                                                <rect key="frame" x="0.0" y="0.0" width="394.5" height="594"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5D-yX-t9v" userLabel="VideoView" customClass="VideoView" customModule="TrustNotification" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="394.5" height="594"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cae-81-ktu" userLabel="BottomStackView">
+                                                <rect key="frame" x="0.0" y="594" width="394.5" height="50"/>
+                                                <subviews>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ras-f2-JCS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="188" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEK-yB-gkq" customClass="MDCButton">
+                                                        <rect key="frame" x="198" y="0.0" width="140.5" height="50"/>
+                                                        <state key="normal" title="Button">
+                                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gho-i6-qYR" customClass="MDCButton">
+                                                        <rect key="frame" x="348.5" y="0.0" width="46" height="50"/>
+                                                        <state key="normal" title="Button">
+                                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="oGz-2G-gy5"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Z8v-LX-PS8" firstAttribute="width" secondItem="au1-Gq-wHm" secondAttribute="width" multiplier="1.00127" id="8MW-3O-XhX"/>
+                                    <constraint firstItem="Z8v-LX-PS8" firstAttribute="centerX" secondItem="au1-Gq-wHm" secondAttribute="centerX" id="YRY-O1-vIR"/>
+                                    <constraint firstAttribute="height" secondItem="Z8v-LX-PS8" secondAttribute="height" id="be3-8d-h1p"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLa-KU-ydJ">
+                                <rect key="frame" x="30" y="147" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="ftb-Ph-cpT"/>
+                                    <constraint firstAttribute="height" constant="36" id="oXD-A7-KFB"/>
+                                </constraints>
+                                <state key="normal" image="audio_enabled_icon"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bvc-z5-Lv9">
+                                <rect key="frame" x="194" y="147" width="200" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tph-VC-2mQ">
+                                        <rect key="frame" x="5" y="9" width="164" height="18"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.82881272009999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="7ML-XJ-m78"/>
+                                    <constraint firstAttribute="width" constant="200" id="MPK-qr-6KD"/>
+                                    <constraint firstItem="tph-VC-2mQ" firstAttribute="centerY" secondItem="Bvc-z5-Lv9" secondAttribute="centerY" id="ORK-Jg-rLb"/>
+                                    <constraint firstItem="tph-VC-2mQ" firstAttribute="leading" secondItem="Bvc-z5-Lv9" secondAttribute="leading" constant="5" id="iWe-Xy-hxN"/>
+                                    <constraint firstItem="tph-VC-2mQ" firstAttribute="width" secondItem="Bvc-z5-Lv9" secondAttribute="width" constant="-36" id="yLi-dT-e9R"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5Y-NL-Jn7">
+                                <rect key="frame" x="358" y="147" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="3rG-YB-bvG"/>
+                                    <constraint firstAttribute="width" constant="36" id="caz-Sx-Qzl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" image="close_icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAN-Lg-exa">
+                                <rect key="frame" x="192" y="433" width="30" height="30"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OAN-Lg-exa" firstAttribute="centerX" secondItem="7cX-f8-da1" secondAttribute="centerX" id="AG2-7p-JDf"/>
+                            <constraint firstItem="rvH-Rr-bpi" firstAttribute="trailing" secondItem="Bvc-z5-Lv9" secondAttribute="trailing" constant="20" id="IW3-HX-Gxh"/>
+                            <constraint firstItem="z5Y-NL-Jn7" firstAttribute="top" secondItem="Bvc-z5-Lv9" secondAttribute="top" id="IYe-DH-e4O"/>
+                            <constraint firstItem="au1-Gq-wHm" firstAttribute="leading" secondItem="rvH-Rr-bpi" secondAttribute="leading" constant="10" id="QcH-ke-Hzd"/>
+                            <constraint firstItem="FLa-KU-ydJ" firstAttribute="top" secondItem="au1-Gq-wHm" secondAttribute="top" constant="21" id="Rbs-nq-9yQ"/>
+                            <constraint firstItem="Bvc-z5-Lv9" firstAttribute="top" secondItem="au1-Gq-wHm" secondAttribute="top" constant="21" id="d94-Dr-VKq"/>
+                            <constraint firstItem="rvH-Rr-bpi" firstAttribute="trailing" secondItem="au1-Gq-wHm" secondAttribute="trailing" constant="10" id="mjL-vd-jzT"/>
+                            <constraint firstItem="au1-Gq-wHm" firstAttribute="centerY" secondItem="7cX-f8-da1" secondAttribute="centerY" id="rTt-FI-RhK"/>
+                            <constraint firstItem="FLa-KU-ydJ" firstAttribute="leading" secondItem="au1-Gq-wHm" secondAttribute="leading" constant="20" id="rnY-VW-6oG"/>
+                            <constraint firstItem="OAN-Lg-exa" firstAttribute="centerY" secondItem="7cX-f8-da1" secondAttribute="centerY" id="tLo-Gd-who"/>
+                            <constraint firstItem="z5Y-NL-Jn7" firstAttribute="trailing" secondItem="Bvc-z5-Lv9" secondAttribute="trailing" id="yjG-T5-Yjl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rvH-Rr-bpi"/>
+                    </view>
+                    <connections>
+                        <outlet property="audioButton" destination="FLa-KU-ydJ" id="Bsh-LT-NXz"/>
+                        <outlet property="buttonL" destination="pEK-yB-gkq" id="kUf-xD-Uxy"/>
+                        <outlet property="buttonR" destination="Gho-i6-qYR" id="wNy-G6-G67"/>
+                        <outlet property="buttonsMargin" destination="Ras-f2-JCS" id="8jN-vk-HDp"/>
+                        <outlet property="buttonsStack" destination="cae-81-ktu" id="RjI-Xj-cg8"/>
+                        <outlet property="closeButton" destination="z5Y-NL-Jn7" id="vju-Lo-PM2"/>
+                        <outlet property="closeView" destination="Bvc-z5-Lv9" id="mgV-P0-fWM"/>
+                        <outlet property="dialogView" destination="au1-Gq-wHm" id="HcW-EA-NkO"/>
+                        <outlet property="remainSecLabel" destination="tph-VC-2mQ" id="cRI-7z-jJb"/>
+                        <outlet property="replayButton" destination="OAN-Lg-exa" id="jD4-JV-FV8"/>
+                        <outlet property="videoView" destination="J5D-yX-t9v" id="bHS-ew-gQo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2KA-9d-deq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166.66666666666669" y="-76.339285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="audio_enabled_icon" width="36" height="36"/>
+        <image name="close_icon" width="84" height="84"/>
+    </resources>
+</document>

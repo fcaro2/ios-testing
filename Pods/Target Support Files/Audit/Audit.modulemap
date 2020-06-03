@@ -1,0 +1,6 @@
+framework module Audit {
+  umbrella header "Audit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module TrustNotification {
+  umbrella header "TrustNotification-umbrella.h"
+
+  export *
+  module * { export * }
+}

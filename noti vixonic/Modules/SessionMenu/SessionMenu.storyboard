@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Lk-CK-4Wq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Session Menu View Controller-->
+        <scene sceneID="NBN-IS-ekP">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="5Lk-CK-4Wq" customClass="SessionMenuViewController" customModule="Noti_Vixonic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aJk-di-P7n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="E9G-dA-Zgk" userLabel="{sessionMenuStackView}">
+                                <rect key="frame" x="0.0" y="299.5" width="414" height="297.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="oaO-Gb-gLj" userLabel="{inCenterItemsStackView}">
+                                        <rect key="frame" x="24" y="8" width="366" height="281.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4H2-5I-FVG" userLabel="{centerAppLogoStackView}">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="72"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoVixonic" translatesAutoresizingMaskIntoConstraints="NO" id="crL-Gf-xzv" userLabel="{headerVixonicLogoImage}">
+                                                        <rect key="frame" x="40" y="8" width="286" height="56"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="8" left="40" bottom="8" right="40"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qSb-aI-U0g" userLabel="{inCenterLabelStackView}">
+                                                <rect key="frame" x="0.0" y="120" width="366" height="57.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xeh-Vb-enX" userLabel="{welcomeLabel}">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="33"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="28"/>
+                                                        <color key="textColor" red="0.58039215690000001" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa a Noti utilizando Trust." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQb-mc-HSr" userLabel="{signInVixonicLabel}">
+                                                        <rect key="frame" x="0.0" y="41" width="366" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" red="0.58039215690000001" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBX-Zx-iVT" userLabel="{inCenterButtonsStackView}">
+                                                <rect key="frame" x="0.0" y="225.5" width="366" height="56"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="no1-7m-mcx" userLabel="{loginUseItrustButton}" customClass="MDCButton">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="56"/>
+                                                        <color key="backgroundColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                                                        <state key="normal" title="Ingresa con Trust" image="trustSinglelogo"/>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="CL9-ze-Ach"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="8" left="24" bottom="8" right="24"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ANb-tK-EfG" userLabel="{inBottomItemsStackView}">
+                                <rect key="frame" x="0.0" y="795" width="414" height="67"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKV-TP-C1p" userLabel="{poweredByLabel}">
+                                        <rect key="frame" x="8" y="8" width="398" height="12"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
+                                        <color key="textColor" red="0.58039215690000001" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trustLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BTq-ZG-N7k" userLabel="{bottomTrustLogoImage}">
+                                        <rect key="frame" x="8" y="28" width="398" height="23"/>
+                                    </imageView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="16" right="8"/>
+                            </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="i6M-JX-IY1" userLabel="{activityIndicator}">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <view hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWK-Oi-xsU" userLabel="{screenActivityIndicatorView}" customClass="LottieView" customModule="Lottie">
+                                <rect key="frame" x="124" y="365" width="166" height="166"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sv6-dr-7iT" userLabel="{loadingBackgroundView}">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sBX-n0-qki" firstAttribute="bottom" secondItem="ANb-tK-EfG" secondAttribute="bottom" id="0VO-VH-WGN"/>
+                            <constraint firstItem="E9G-dA-Zgk" firstAttribute="centerX" secondItem="aJk-di-P7n" secondAttribute="centerX" id="2FN-gf-Hb9"/>
+                            <constraint firstItem="sBX-n0-qki" firstAttribute="top" secondItem="Sv6-dr-7iT" secondAttribute="top" id="4W1-bh-N7n"/>
+                            <constraint firstItem="E9G-dA-Zgk" firstAttribute="trailing" secondItem="sBX-n0-qki" secondAttribute="trailing" id="KBd-xz-yuV"/>
+                            <constraint firstItem="IWK-Oi-xsU" firstAttribute="height" secondItem="aJk-di-P7n" secondAttribute="width" multiplier="0.4" id="SmO-ex-POo"/>
+                            <constraint firstItem="sBX-n0-qki" firstAttribute="leading" secondItem="E9G-dA-Zgk" secondAttribute="leading" id="VdN-Yk-4sG"/>
+                            <constraint firstItem="sBX-n0-qki" firstAttribute="trailing" secondItem="ANb-tK-EfG" secondAttribute="trailing" id="Zey-G0-3WN"/>
+                            <constraint firstItem="Sv6-dr-7iT" firstAttribute="bottom" secondItem="sBX-n0-qki" secondAttribute="bottom" id="bAT-ls-sum"/>
+                            <constraint firstItem="IWK-Oi-xsU" firstAttribute="width" secondItem="aJk-di-P7n" secondAttribute="width" multiplier="0.4" id="bhd-a3-duA"/>
+                            <constraint firstItem="ANb-tK-EfG" firstAttribute="leading" secondItem="sBX-n0-qki" secondAttribute="leading" id="g89-ph-UHI"/>
+                            <constraint firstItem="E9G-dA-Zgk" firstAttribute="centerY" secondItem="aJk-di-P7n" secondAttribute="centerY" id="kSw-H8-Od3"/>
+                            <constraint firstItem="IWK-Oi-xsU" firstAttribute="centerX" secondItem="aJk-di-P7n" secondAttribute="centerX" id="s6r-oF-BMq"/>
+                            <constraint firstItem="sBX-n0-qki" firstAttribute="trailing" secondItem="Sv6-dr-7iT" secondAttribute="trailing" id="s7l-4c-MPw"/>
+                            <constraint firstItem="IWK-Oi-xsU" firstAttribute="centerY" secondItem="aJk-di-P7n" secondAttribute="centerY" id="umX-ht-I5e"/>
+                            <constraint firstItem="Sv6-dr-7iT" firstAttribute="leading" secondItem="sBX-n0-qki" secondAttribute="leading" id="xB1-yC-Xzd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sBX-n0-qki"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorBackground" destination="IWK-Oi-xsU" id="Taq-Qb-2Fp"/>
+                        <outlet property="loadingBackground" destination="Sv6-dr-7iT" id="NHO-Km-hBa"/>
+                        <outlet property="loadingView" destination="IWK-Oi-xsU" id="oVu-f8-8qU"/>
+                        <outlet property="loginButton" destination="no1-7m-mcx" id="gfp-Mr-knU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X7a-Ge-xvy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-169.56521739130437" y="20.089285714285712"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logoVixonic" width="545" height="56"/>
+        <image name="trustLogo" width="62" height="23"/>
+        <image name="trustSinglelogo" width="20" height="20"/>
+    </resources>
+</document>
